@@ -10,7 +10,9 @@ const forecast = (longitude,latitude,callback) =>
                 {
                     summary: response.body.daily.data[0].summary,
                     temperature: currentWeather.temperature,
-                    precipProbability: currentWeather.precipProbability
+                    precipProbability: currentWeather.precipProbability,
+                    tempHigh: response.body.daily.data[0].temperatureHigh,
+                    tempLow: response.body.daily.data[0].temperatureLow
                 },undefined);
         }else{
             console.log('Unable to connect to Weather service');

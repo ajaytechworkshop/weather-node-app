@@ -59,7 +59,9 @@ app.get('/weather',(req,res) => {
                             location: locationData.place,
                             summary: forecastData.summary,
                             temperature : forecastData.temperature,
-                            precipProbability : forecastData.precipProbability 
+                            precipProbability : forecastData.precipProbability,
+                            tempHigh : forecastData.tempHigh,
+                            tempLow: forecastData.tempLow
                         });
                      }
                      else{
