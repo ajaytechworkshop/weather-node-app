@@ -22,7 +22,7 @@ weatherForm.addEventListener('submit',(e) =>
             }
             else{
                 messageOne.textContent = data.location;
-                messageTwo.textContent = data.summary + '. The tempterate is '+data.temperature+' .The raining possibility is '+data.precipProbability+' .Temperature high for day is '+data.tempHigh+ ' .Low temperature for the day is :'+data.tempLow; 
+                messageTwo.textContent = data.summary + '. The tempterate is '+data.temperature+' .The raining possibility is '+data.precipProbability+' .Temperature high for day is '+data.tempHigh+ ' .Low temperature for the day is '+data.tempLow; 
             }
         });
     });
